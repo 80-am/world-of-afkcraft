@@ -1,18 +1,13 @@
 # World of Afkcraft
---------------
 
 Simple AFK bot for World of Warcraft
 
 ## Prerequisites
---------------
 
 python3
 pyautogui
 
 ## Instructions
---------------
-
-Open terminal
 
 Checkout repository
 ```
@@ -25,7 +20,6 @@ Start with
 ```
 
 ## Disclaimer
---------------
 
 This bot might interfere with Blizzards policy against Third-Party software.
 Using it might suspend your account.
