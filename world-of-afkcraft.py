@@ -5,9 +5,6 @@ from random import randint
 from pyautogui import press
 
 move_keys = ['w', 'a', 'd', 'space']
-print('[1] Random movement')
-print('[2] Attack mode')
-mode = int(input('Select afk-mode: '))
 run = True
 
 print('Focus on WoW window')
@@ -31,16 +28,3 @@ while (run):
         print('Waiting ' + str(time_between_actions) + ' seconds for next action')
         time.sleep(time_between_actions)
     
-    if (mode == 2):
-        for i in range(actions):
-            press('tab')
-            press('t')
-            for i in range(5):
-                attack_speed = randint(2, 5)
-                press('1')
-                print('Attacking in ' + str(attack_speed) + ' seconds')
-                time.sleep(attack_speed)
-            
-        print('Waiting ' + str(time_between_actions) + ' seconds for next action')
-        time.sleep(time_between_actions)
-
