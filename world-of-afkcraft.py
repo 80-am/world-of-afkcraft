@@ -9,7 +9,7 @@ run = True
 
 print('Focus on WoW window')
 for i in reversed(range(10)):
-    print('Starting in ' + str(i) + ' seconds!')
+    print('Starting in ' + str(i + 1) + ' seconds!')
     time.sleep(1)
 
 while (run):
@@ -17,14 +17,12 @@ while (run):
     inner_sleep = random.random()
     actions = randint(3, 12)
 
-    if (mode == 1):
-        for i in range(actions):
-            press('w')
-        for i in range(actions):
-            random_key = [move_keys[random.randrange(len(move_keys))]
-                    for key in range(4)]
-            press(random_key)
-            time.sleep(inner_sleep)
-        print('Waiting ' + str(time_between_actions) + ' seconds for next action')
-        time.sleep(time_between_actions)
-    
+    for i in range(actions):
+        press('w')
+    for i in range(actions):
+        random_key = [move_keys[random.randrange(len(move_keys))]
+                for key in range(4)]
+        press(random_key)
+        time.sleep(inner_sleep)
+    print('Waiting ' + str(time_between_actions) + ' seconds for next action')
+    time.sleep(time_between_actions)
