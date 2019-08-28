@@ -1,4 +1,4 @@
-# World of Afkcraft
+![World of Afkcraft](https://raw.githubusercontent.com/80-am/world-of-afkcraft/master/logo.png)
 
 Simple AFK bot for World of Warcraft
 
@@ -25,4 +25,3 @@ This bot might interfere with Blizzards policy against Third-Party software.
 Using it might suspend your account.
 
 You assume all responsibility and liability.
-
