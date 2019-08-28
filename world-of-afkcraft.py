@@ -16,7 +16,7 @@ for i in reversed(range(10)):
     time.sleep(1)
 
 while (run):
-    time_between_actions = randint(1, 24)
+    time_between_actions = randint(100, 900)
     inner_sleep = random.random()
     actions = randint(3, 12)
 
